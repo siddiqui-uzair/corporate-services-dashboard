@@ -46,8 +46,11 @@ Open http://localhost:3000
 
 ## Project Structure
 src/
+
 ├── App.js        # Main component with all logic
+
 ├── index.js      # React entry point
+
 └── index.css     # Global styles
 
 ### Statistics Dashboard
