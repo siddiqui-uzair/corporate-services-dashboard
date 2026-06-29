@@ -5,11 +5,17 @@ A modern **React dashboard** for managing corporate office service requests with
 ## Features
 
 ✅ Add, view, and delete service requests
+
 ✅ Track status (Pending, Approved, Completed)
+
 ✅ Real-time statistics dashboard
+
 ✅ Completion history with toggle view
+
 ✅ Data persists with localStorage (survives refresh)
+
 ✅ Responsive design (mobile-friendly)
+
 ✅ Modern UI with inline styling
 
 ## Technologies
