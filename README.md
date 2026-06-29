@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Corporate Services Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern **React dashboard** for managing corporate office service requests with real-time status tracking and data persistence.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+✅ Add, view, and delete service requests
+✅ Track status (Pending, Approved, Completed)
+✅ Real-time statistics dashboard
+✅ Completion history with toggle view
+✅ Data persists with localStorage (survives refresh)
+✅ Responsive design (mobile-friendly)
+✅ Modern UI with inline styling
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18
+- JavaScript / HTML5 / CSS3
+- React Hooks (State Management)
+- localStorage API (Data Persistence)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Quick Start
 
-### `npm test`
+```bash
+git clone https://github.com/siddiqui-uzair/corporate-services-dashboard.git
+cd corporate-dashboard
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open http://localhost:3000
 
-### `npm run build`
+## How to Use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Add Request:** Type service name, select status, click "Add Request"
+2. **Change Status:** Click dropdown to update (Pending → Approved → Completed)
+3. **View History:** Click "Show Completion History" to see completed requests
+4. **Delete:** Click "Delete" button to remove requests
+5. **Refresh:** Close and reopen - your data persists!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
+src/
+├── App.js        # Main component with all logic
+├── index.js      # React entry point
+└── index.css     # Global styles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Statistics Dashboard
+- Real-time count of total, pending, approved, and completed requests
 
-### `npm run eject`
+### Active Requests Table
+- View and manage in-progress requests
+- Change status with dropdown
+- Delete requests instantly
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Completion History
+- Toggle view of all completed requests
+- Shows completion date
+- Read-only archive
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Data Persistence
+- All requests saved to browser's localStorage
+- Data survives page refresh and browser restart
+- Automatic save on every change
