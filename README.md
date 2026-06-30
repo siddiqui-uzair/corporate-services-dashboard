@@ -70,3 +70,10 @@ src/
 - All requests saved to browser's localStorage
 - Data survives page refresh and browser restart
 - Automatic save on every change
+
+## Skills Demonstrated
+
+- React components & hooks
+- State management
+- Responsive design
+- User interface design
